@@ -6,10 +6,15 @@ export interface GridViewProps {
 
 const GridView = ({ desktopCols }: GridViewProps) => {
   const [dCols, setDCols] = React.useState(desktopCols);
+
   const gridStyles = () => {
     const base = 'grid w-full';
-    return `${base} grid-cols-${dCols}`;
+    return `${base} grid-cols-${dCols.toString()}`;
   };
+
+  React.useEffect(() => {
+    setDCols(desktopCols);
+  }, [desktopCols]);
 
   return (
     <div className={gridStyles()}>
