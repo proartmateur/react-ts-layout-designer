@@ -59,7 +59,11 @@ const Cell = ({ cell, gridCols }: { cell: CellProps; gridCols: number }) => {
       <button className="bg-black px-1" onClick={(e) => handleColsPanSubs()}>
         -
       </button>
-      <p dangerouslySetInnerHTML={{ __html: cell.text.replace(colSpan) }}></p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: cell.text.replace('$COL-SPAN$', colSpan),
+        }}
+      ></p>
       <button className="bg-black px-1" onClick={(e) => handleColsPanAdd()}>
         +
       </button>

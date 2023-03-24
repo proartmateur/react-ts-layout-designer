@@ -12,6 +12,22 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       text: `
       <h2 class="font-bold text-2xl"> Hola - $COL-SPAN$</h2>
       <p>ljsdaljhdfajd</p>
+      <div class="
+      flex 
+      min-w-[50px] 
+      min-h-[50px]
+      bg-black
+      my-6
+      ">&nbsp;</div>
+      <div class="
+      flex 
+      min-w-[50px] 
+      min-h-[50px]
+      bg-black
+      my-6
+      items-end
+      justify-end
+      ">Wow!</div>
       `,
       colSpan: 1,
       rowSpan: 2,
@@ -23,7 +39,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       text: 'Yu',
       colSpan: 1,
       rowSpan: 1,
-      bg: 'amber-400',
+      bg: 'amber-900',
       minH: '0',
     },
     {
@@ -31,7 +47,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       text: 'Till',
       colSpan: 1,
       rowSpan: 1,
-      bg: 'amber-400',
+      bg: 'violet-400',
       minH: '5rem',
     },
     {
