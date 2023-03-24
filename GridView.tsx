@@ -9,10 +9,14 @@ const GridView = ({ desktopCols }: GridViewProps) => {
   const [rowNums, setRowNums] = React.useState([
     {
       id: 0,
-      text: 'Hola',
+      text: `
+      <h2 class="font-bold text-2xl"> Hola - $COL-SPAN$</h2>
+      <p>ljsdaljhdfajd</p>
+      `,
       colSpan: 1,
-      rowSpan: 1,
+      rowSpan: 2,
       bg: 'sky-600',
+      minH: '300px',
     },
     {
       id: 1,
@@ -20,6 +24,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       colSpan: 1,
       rowSpan: 1,
       bg: 'amber-400',
+      minH: '0',
     },
     {
       id: 2,
@@ -27,6 +32,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       colSpan: 1,
       rowSpan: 1,
       bg: 'amber-400',
+      minH: '5rem',
     },
     {
       id: 3,
@@ -34,6 +40,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       colSpan: 1,
       rowSpan: 1,
       bg: 'amber-500',
+      minH: 'auto',
     },
     {
       id: 4,
@@ -41,6 +48,7 @@ const GridView = ({ desktopCols }: GridViewProps) => {
       colSpan: 1,
       rowSpan: 1,
       bg: 'sky-400',
+      minH: '100px',
     },
   ]);
 
