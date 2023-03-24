@@ -1,12 +1,17 @@
 import * as React from 'react';
 import { GridView } from './GridView';
-import { GridConfig } from './GridConfig';
+import { GridConfig, GridConfigDto } from './GridConfig';
 import './style.css';
 
 export default function App() {
+  const [desktopCols, setDesktopCols] = React.useState(0);
+  const onGridConfigChange = (e: GridConfigDto) => {
+    console.log('Updated');
+    console.log(e);
+  };
   return (
-    <div className="flex bg-amber-50 w-full">
-      <GridConfig />
+    <div className="flex flex-col bg-amber-50 w-full">
+      <GridConfig onChange={onGridConfigChange} />
       <GridView />
     </div>
   );
