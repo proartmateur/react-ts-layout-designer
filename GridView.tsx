@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 const GridView = () => {
   return (
     <div className="grid grid-cols-4 w-full">
